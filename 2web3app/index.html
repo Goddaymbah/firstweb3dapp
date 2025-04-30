@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First dApp</title>
+</head>
+<body>
+   <h1>Welcome to web3!</h1>
+   <button id="connectButton">Connect wallet</button>
+   <p id="walletInfo">Not connected.</p>
+   <!-- Load Ethers,js from a CDN -->
+   <h3>Send ETH</h3>
+   <input type="text" id="receiverInput" placeholder="Enter 0x address or ENS (e.g., vitalik.eth)">  
+   <input type="number" id="sendAmount" placeholder="Amount in ETH">
+   <h4>Gas Options</h4>  
+   <button id="sendButton">Send</button>
+   <select id="gasPriority">
+    <option value="low">Low (Cheap, Slow)</option>
+    <option value="medium" selected>Medium</option>
+    <option value="high">High (Fast, Expensive)</option>
+</select>
+   <p id="transactionStatus"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <!-- Load our Javascript file -->
+     <script src="script.js"></script>
+</body>
+</html>
